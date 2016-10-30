@@ -1,0 +1,182 @@
+<!DOCTYPE doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>
+                Clean Code
+            </title>
+            <meta content="A framework for easily creating beautiful presentations using HTML" name="description">
+                <meta content="Hakim El Hattab" name="author">
+                    <meta content="yes" name="apple-mobile-web-app-capable"/>
+                    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
+                    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport">
+                        <link href="css/reveal.css" rel="stylesheet">
+                            <link href="css/theme/league.css" id="theme" rel="stylesheet">
+                                <!-- Code syntax highlighting -->
+                                <link href="lib/css/zenburn.css" rel="stylesheet">
+                                    <!-- Printing and PDF exports -->
+                                    <script>
+                                        var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+                                    </script>
+                                    <style type="text/css">
+                                    </style>
+                                    <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+                                </link>
+                            </link>
+                        </link>
+                    </meta>
+                </meta>
+            </meta>
+        </meta>
+    </head>
+    <body>
+        <div class="reveal">
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <!-- Home Page  -->
+                <section>
+                    <h1>
+                        Clean Code
+                    </h1>
+                </section>
+                <section>
+                    <p>
+                        "Any fool can write code that a computer can understand. Good programmers write code that humans can understand."
+                    </p>
+                    <image src="images/mf.jpg" width="150px">
+                    </image>
+                </section>
+                <section>
+                    <image src="images/read_write_ratio.jpg" width="1200px">
+                    </image>
+                </section>
+                <section>
+                    <image src="images/coc_clean_code.png" width="900px">
+                    </image>
+                </section>
+                <section>
+                    <p>
+                        "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live."
+                    </p>
+                    <p>
+                        - Martin Golding
+                    </p>
+                </section>
+                <section>
+                    <h3>
+                        General Guideline
+                    </h3>
+                    <ul>
+                        <li>
+                            Follow Standard Conventions
+                        </li>
+                        <li>
+                            Keep It Simple and Stupid
+                        </li>
+                        <li>
+                            Boy Scout Rule（童子军规则）
+                        </li>
+                        <li>
+                            Root Cause Analysis
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <section>
+                        <h3>
+                            Follow Standard Conventions - Patterns
+                        </h3>
+                        <ul>
+                            <li>
+                                A vocabulary widely accepted by most programmers
+                            </li>
+                            <li>
+                                Help reader understands your code
+                            </li>
+                            <li>
+                                Use it wisely
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>
+                            Lambda Architecture - example 1
+                        </h3>
+                        <image src="images/lambda_architecture.png" width="1200px"/>
+                    </section>
+                    <section>
+                        <h3>Role Based Access Control - example 2</h3>
+                        <ul>
+                            <li>Authentication</li>
+                            <li>Authorization</li>
+                            <li>User</li>
+                            <li>Group</li>
+                            <li>Role</li>
+                            <li>Permission</li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <h3>
+                        Keep It Simple and Stupid
+                    </h3>
+                    <ul>
+                    </ul>
+                </section>
+                <section>
+                    <h3>
+                        Boy Scout Rule（童子军规则）
+                    </h3>
+                    <ul>
+                        <li>
+                            Always leave the campground cleaner than you found it.
+                        </li>
+                        <li>
+                            让营地比你刚来时更干净。
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>
+                        Root Cause Analysis
+                    </h3>
+                </section>
+                <section>
+                    <h1>
+                        Thanks
+                    </h1>
+                </section>
+            </div>
+        </div>
+        <script src="lib/js/head.min.js">
+        </script>
+        <script src="js/reveal.js">
+        </script>
+        <script>
+            // Full list of configuration options available at:
+                        // https://github.com/hakimel/reveal.js#configuration
+                        Reveal.initialize({
+                        controls: true,
+                        progress: true,
+                        history: true,
+                        center: true,
+                        transition: 'slide', // none/fade/slide/convex/concave/zoom
+                        // Optional reveal.js plugins
+                        dependencies: [
+                        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                        { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                        { src: 'plugin/zoom-js/zoom.js', async: true },
+                        { src: 'plugin/notes/notes.js', async: true }
+                        ]
+                        });
+        </script>
+    </body>
+</html>
