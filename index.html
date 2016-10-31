@@ -44,21 +44,28 @@
                     <h1>
                         Clean Code
                     </h1>
+                    <aside class="notes">
+                        课程的回顾，本次的内容
+                        程序的两个消费者，计算机和人，机器对代码的clean程度没要求，只有作为代码的作者和维护者的人才提出了clean code要求
+                        机器可以使用无法理解的命名，深层嵌套
+                    </aside>
                 </section>
                 <section>
                     <p>
                         "Any fool can write code that a computer can understand. Good programmers write code that humans can understand."
                     </p>
-                    <image src="images/mf.jpg" width="150px">
-                    </image>
+                    <image src="images/mf.jpg" width="150px"/>
+                    <aside class="notes">
+                        所以，当我们要给出clean code定义的时候，我们一般会有两个角度：
+                        可读性，也即是容易理解
+                        修改的难以程度（可维护性、可扩展性），也就是添加新功能是的难易程度
+                    </aside>
                 </section>
                 <section>
-                    <image src="images/read_write_ratio.jpg" width="1200px">
-                    </image>
+                    <image src="images/read_write_ratio.jpg" width="1200px"/>
                 </section>
                 <section>
-                    <image src="images/coc_clean_code.png" width="900px">
-                    </image>
+                    <image src="images/coc_clean_code.png" width="900px"/>
                 </section>
                 <section>
                     <p>
@@ -67,6 +74,13 @@
                     <p>
                         - Martin Golding
                     </p>
+                    <aside class="notes">
+                        同team的人在对这一段垃圾代码咆哮的时候，
+                        完了又git blame时，
+                        写代码不知关乎项目，还可能关乎人身安全
+                        如何写clean code? 一些大家都了解的，比如magic number, duplication, small method, small class
+                        这里列了几个high level的guideline
+                    </aside>
                 </section>
                 <section>
                     <h3>
@@ -90,19 +104,18 @@
                 <section>
                     <section>
                         <h3>
-                            Follow Standard Conventions - Patterns
+                            Follow Standard Conventions
                         </h3>
                         <ul>
-                            <li>
-                                A vocabulary widely accepted by most programmers
-                            </li>
-                            <li>
-                                Help reader understands your code
-                            </li>
-                            <li>
-                                Use it wisely
-                            </li>
+                            <li>Architecture Styles</li>
+                            <li>Design Patterns</li>
+                            <li>Analysis Patterns</li>
+                            <li>Languge Conventions</li>
+                            <li>...</li>
                         </ul>
+                         <aside class="notes">
+                             模式的定义
+                         </aside>
                     </section>
                     <section>
                         <h3>
@@ -111,41 +124,87 @@
                         <image src="images/lambda_architecture.png" width="1200px"/>
                     </section>
                     <section>
-                        <h3>Role Based Access Control - example 2</h3>
+                        <h3>
+                            MVC based folder structure - example 2
+                        </h3>
+                        <image src="images/mvc_rails.png" style="float:right" width="300px"/>
+                        <image src="images/mvc_aspnet.jpg" style="float:left" width="300px"/>
+                    </section>
+                    <section>
+                        <h3>
+                            Role Based Access Control - example 3
+                        </h3>
                         <ul>
-                            <li>Authentication</li>
-                            <li>Authorization</li>
-                            <li>User</li>
-                            <li>Group</li>
-                            <li>Role</li>
-                            <li>Permission</li>
+                            <li>
+                                Authentication
+                            </li>
+                            <li>
+                                Authorization
+                            </li>
+                            <li>
+                                User
+                            </li>
+                            <li>
+                                Group
+                            </li>
+                            <li>
+                                Role
+                            </li>
+                            <li>
+                                Permission
+                            </li>
                         </ul>
                     </section>
                 </section>
                 <section>
-                    <h3>
-                        Keep It Simple and Stupid
-                    </h3>
+                    <section>
+                        <h3>
+                            Keep It Simple and Stupid
+                        </h3>
+                    </section>
+                    <section>
+                        <image src="images/simplicity.jpg"/>
+                    </section>
+                    <section>
                     <ul>
+                        <li>Use Intention-Revealing Names</li>
+                        <li>Small method/class</li>
+                        <li>No nested control structure</li>
+                        <li>Avoid double negative</li>
+                        <li>Limit number of parameters to a method</li>
+                        <li>Command Query Separation</li>
+                        <li>Do one thing</li>
+                        <li>...</li>
                     </ul>
+                    </section>
                 </section>
                 <section>
-                    <h3>
-                        Boy Scout Rule（童子军规则）
-                    </h3>
-                    <ul>
-                        <li>
-                            Always leave the campground cleaner than you found it.
-                        </li>
-                        <li>
-                            让营地比你刚来时更干净。
-                        </li>
-                    </ul>
+                    <section>
+                        <h3>
+                            Boy Scout Rule（童子军规则）
+                        </h3>
+                        <ul>
+                            <li>
+                                Always leave the campground cleaner than you found it.
+                            </li>
+                            <li>
+                                让营地比你刚来时更干净。
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <image src="images/coc_clean_code.png" width="800px"/>
+                    </section>
                 </section>
                 <section>
                     <h3>
                         Root Cause Analysis
                     </h3>
+                </section>
+                <section>
+                    <h3>Books</h3>
+                    <image src="images/art_of_readable_code.jpg" style="float:left" height="400px"/>
+                    <image src="images/clean_code_book.png" style="float:right" height="400px"/>
                 </section>
                 <section>
                     <h1>
@@ -163,6 +222,7 @@
                         // https://github.com/hakimel/reveal.js#configuration
                         Reveal.initialize({
                         controls: true,
+                        showNotes: true,
                         progress: true,
                         history: true,
                         center: true,
